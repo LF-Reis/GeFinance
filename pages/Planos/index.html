@@ -8,25 +8,61 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="pages/home_page/index.html">GeFinance  </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="">Página inicial</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/login/index.html">Login</a>
-            </li>
+    <header>
+      <nav>
+          <ul class="nav-bar">
+              <li class="logo"><a href="#"><img src="GeFinance.png" alt="Logo"></a></li>
+              <input type="checkbox" id="check" />
+              <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+              <div class="menu">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Planos</a></li>
+                  <li><a href="#">Sobre</a></li>
+                  <li><a href="#">Login</a></li>
+                  <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+              </div>
           </ul>
-        </div>
+      </nav>
+  </header>
+
+    <div class="planos">
+      <h2 class="block-heading">
+        Basico
+      </h2>
+      <ul class="list-basic">
+        <li>Relatório Geral.</li>
+        <li>Controle financeiro manual, registro de despesas e receitas.</li>
+        <li>Acesso a dicas de economia e finanças personalizadas.</li>
+      </ul>
+      <div class="valor">
+      <strong><p>R$99,90/Mês <br>
+          ou <br>
+          R$949,90/Ano
+      </p><small>5% de desconto</small></strong>
+      <button class="button">Assinar</button>
       </div>
-    </nav>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </div>
+
+    <div class="planos">
+      <h2 class="block-heading">
+        Premium
+      </h2>
+      <ul class="list-basic">
+        <li>Relatório Geral.</li>
+        <li>Controle financeiro manual, registro de despesas e receitas.</li>
+        <li>Acesso a dicas de economia e finanças personalizadas.</li>
+        <li>Relatórios avançados com gráficos e análises detalhadas.</li>
+        <li>Definição e monitoramento de metas financeiras personalizadas com notificações.</li>
+      </ul>
+      <div class="valor1">
+        <strong><p>R$129,90/Mês <br>
+          ou <br>
+          R$1324,90/Ano
+        </p><small>15% de desconto</small></strong>
+        <button class="button">Assinar</button>
+      </div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
